@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Random Order</title>
+
+	<script type="text/javascript" src="scripts/script.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<br>
+
+		<div class="row">
+			<div class="col-md-12 center-block">
+				<h1>Random Order :</h1>
+
+				<br />
+				<div class="form-group">
+					<label for="comment">Ingrese los items a ordenar separados por ',' (coma), como dice el ejemplo precargado:</label>
+					<textarea class="form-control" rows="10" id="comment">Nati,Mery,Fran,Olek,Dani,Gabi,Gaby</textarea>
+				</div>
+
+				<h6>Se ordenaran los items ingresados de manera aleatoria</h6>
+				<br />
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10"></div>
+			<div class="col-md-2">
+				<button type="button" class="btn btn-primary btn-lg" onclick="procesarTodo();">Ordenar!</button>
+			</div>
+		</div>
+		<br />
+		<br />
+
+	
+
+		<div class="row">
+			<div class="col-md-12 center-block">
+				<h2>Resultado final :</h2>
+
+				<br />
+				<div class="form-group">
+					<h5>Cantidad de items:</h5> <h5 id="cantidad-palabras">-</h5>
+					<textarea class="form-control" rows="10" id="comment-result">Nati,Mery,Fran,Olek,Dani,Gabi,Gaby</textarea>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
