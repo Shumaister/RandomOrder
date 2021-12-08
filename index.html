@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<title>Random Order</title>
-
 	<script type="text/javascript" src="scripts/script.js"></script>
 </head>
 
@@ -21,7 +21,8 @@
 
 				<br />
 				<div class="form-group">
-					<label for="comment">Ingrese los items a ordenar separados por ',' (coma), como dice el ejemplo precargado:</label>
+					<label for="comment">Ingrese los items a ordenar separados por ',' (coma), como dice el ejemplo
+						precargado:</label>
 					<textarea class="form-control" rows="10" id="comment">Nati,Mery,Fran,Olek,Dani,Gabi,Gaby</textarea>
 				</div>
 
@@ -31,7 +32,13 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-10"></div>
+			<div class="col-md-8"></div>
+			<div class="col-md-2">
+				<select class="form-control" name="team" id="team">
+					<option value="1">Uno</option>
+					<option value="2">Dos</option>
+				</select>
+			</div>
 			<div class="col-md-2">
 				<button type="button" class="btn btn-primary btn-lg" onclick="procesarTodo();">Ordenar!</button>
 			</div>
@@ -39,16 +46,22 @@
 		<br />
 		<br />
 
-	
+
 
 		<div class="row">
 			<div class="col-md-12 center-block">
-				<h2>Resultado final :</h2>
+				<h2>Resultado final</h2>
 
 				<br />
-				<div class="form-group">
-					<h5>Cantidad de items:</h5> <h5 id="cantidad-palabras">-</h5>
-					<textarea class="form-control" rows="10" id="comment-result">Nati,Mery,Fran,Olek,Dani,Gabi,Gaby</textarea>
+				<div id="equipo-1" class="form-group">
+					<h5>Cantidad de items del equipo 1:</h5>
+					<h5 id="cantidad-palabras">-</h5>
+					<textarea class="form-control" rows="5" id="comment-result"></textarea>
+				</div>
+				<div id="equipo-2" class="form-group">
+					<h5>Cantidad de items del equipo 2:</h5>
+					<h5 id="cantidad-palabras-2">-</h5>
+					<textarea class="form-control" rows="5" id="comment-result-2"></textarea>
 				</div>
 
 			</div>
